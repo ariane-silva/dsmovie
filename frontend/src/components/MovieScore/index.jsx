@@ -1,20 +1,20 @@
 
-import {ReactComponent as StarFull} from 'assets/img/star-full.svg';
-import {ReactComponent as StarHalf } from 'assets/img/star-half.svg';
-import {ReactComponent as StarEmpty} from 'assets/img/star-empty.svg';
+import MovieStars from 'components/MovieStars';
 import './styles.css';
 
-function MovieStars(){
+function MovieScore(){
+
+  const score = 4.5;
+  const count = 14;
+    
     return(
-        <div className="dsmovie-stars-container">
-  <StarFull />
-  <StarFull />
-  <StarFull />
-  <StarHalf />
-  <StarEmpty />
-</div>
+      <div className="dsmovie-score-container">
+      <p className="dsmovie-score-value">{score > 0 ? score.toFixed(1) : '-'}</p>
+      <MovieStars />
+      <p className="dsmovie-score-count">{count} avaliações</p>
+  </div>
 
     );
 }
 
-export default MovieStars;
+export default MovieScore;
