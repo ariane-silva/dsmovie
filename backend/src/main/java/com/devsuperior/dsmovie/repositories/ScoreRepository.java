@@ -1,4 +1,4 @@
-package com.devsuperior.dsmovie.repositorie;
+package com.devsuperior.dsmovie.repositories;
 
 
 import com.devsuperior.dsmovie.entities.Score;
