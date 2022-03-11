@@ -33,3 +33,5 @@ public class Movie {
         return scores;
     }
 }
+
+// parei no minuto 43
